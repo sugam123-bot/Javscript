@@ -6,7 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is me Sugam Mainali</h1>
-    <p>I am the don of Sarlahi</p>
+    <h1 id="title">Social Media Survey</h1>
+    <p id="description">Thankyou for taking time for my survey on Social Media</p>
+    <form id="survey-form">
+<label id="name-label" for="name">Name:<input id="name" type="text" placeholder="e.g. Sugam Mainali" class="class2.0" required></label><br>
+<label id="email-label" for="email">Email:<input id="email" type="email" placeholder="e.g. sugamamainali5@gmail.com" class="class2.0"required></label><br>
+<label id="number-label" for="number">Age:<input id="number" type="number"  max="80"min="0"></label>
+<fieldset>
+    <label for="social media">Which social media do you most of the time</label>
+    
+        <select id="dropdown" name="referrer">
+            <option value="" disabled selected>Select one</option>
+        <option value="Facebook" >Facebook</option>
+        <option value="Instagram" >Instagram</option>
+        <option value="Youtube" >YouTube</option>
+        <option value="Threads" >Threads</option>
+    </select>
+</fieldset>
+</form>
 </body>
 </html>
