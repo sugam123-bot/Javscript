@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title">Social Media Survey</h1>
     <p id="description">Thankyou for taking time for my survey on Social Media</p>
     <form id="survey-form">
+        <fieldset class="hey">
 <label id="name-label" for="name">Name:<input id="name" type="text" placeholder="e.g. Sugam Mainali" class="class2.0" required></label><br>
 <label id="email-label" for="email">Email:<input id="email" type="email" placeholder="e.g. sugamamainali5@gmail.com" class="class2.0"required></label><br>
 <label id="number-label" for="number">Age:<input id="number" type="number"  max="80"min="0" class="class2.0"></label>
+</fieldset>
 <fieldset>
-    <label for="social media">Which social media do you most of the time</label>
+    <label for="dropdown">Which social media do you most of the time</label>
     
         <select id="dropdown" name="referrer">
             <option value="" disabled selected>Select one</option>
@@ -23,8 +26,8 @@
         <option value="Threads" >Threads</option>
     </select>
 </fieldset>
-<fieldset class="class3.0">Is social media useful for students?
-<label>Yes<input type="radio" value="yes">
+<fieldset class="class3.0"><legend>Would you prefer social media for children?</legend> 
+<label>Yes<input type="radio" value="yes"></label>
     <label>No<input type="radio" value="no">
 </label>
 </fieldset>
@@ -33,8 +36,8 @@
 <label>Never<input type="checkbox" value="back-code"></label>
 </fieldset>
 <fieldset>
-    <label id="feedback">If sure why and if not then why not?</label>
-    <textarea placeholder ="Leave your comments"></textarea>
+    <label id="feedback" for="comments">If sure why and if not then why not?</label>
+    <textarea placeholder ="Leave your comments"  id="comments" name="comments"></textarea>
 </fieldset>
 <input id="Submit" type="submit" name="submit">
 </form>
